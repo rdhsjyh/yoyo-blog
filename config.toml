@@ -8,3 +8,18 @@ theme = "PaperMod"
   disableThemeToggle = false
   ShowReadingTime = true
   ShowToc = true
+  comments = true
+
+[params.giscus]
+    repo = "rdhsjyh/yoyo-blog"
+    repoID = "R_kgD0QjU3mQ"
+    category = "General"
+    categoryID = "DIC_kwD0QjU3mc4CzcwQ"
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "bottom"
+    theme = "preferred_color_scheme"
+    lang = "zh-CN"
+    crossorigin = "anonymous"
