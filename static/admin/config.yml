@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: rdhsjyh/yoyo-blog      # 你的仓库
+  branch: main
+  auth_type: implicit          # 用 GitHub OAuth 隐式登录
+  app_id: "<Ov23li4I0UXm3iGS2PMu>"   
+
+site_url: "https://rdhsjyh.github.io/yoyo-blog"
+
+# 图片上传位置（存在仓库里）
+media_folder: "static/uploads"
+# 文章引用图片的路径（线上访问路径）
+public_folder: "/yoyo-blog/uploads"
+
+collections:
+  - name: "posts"
+    label: "Yoyo 的小记"
+    label_singular: "小记"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布时间", name: "date", widget: "datetime" }
+      - { label: "作者", name: "author", widget: "string", default: "Yoyo" }
+      - { label: "正文", name: "body", widget: "markdown" }
